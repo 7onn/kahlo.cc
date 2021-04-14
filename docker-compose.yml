@@ -3,6 +3,7 @@ version: "2"
 services:
   webserver:
     image: "devbytom/moodle-php-apache:7.3"
+    restart: always
     volumes:
       - "./src:/var/www/html"
       - "./assets/web/apache2_faildumps.conf:/etc/apache2/conf-enabled/apache2_faildumps.conf"
