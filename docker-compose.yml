@@ -1,0 +1,47 @@
+
+version: "2"
+services:
+  webserver:
+    image: "devbytom/moodle-php-apache:7.3"
+    volumes:
+      - "./src:/var/www/html"
+      - "./assets/web/apache2_faildumps.conf:/etc/apache2/conf-enabled/apache2_faildumps.conf"
+      - "./assets/web/apache2_mailhog.conf:/etc/apache2/conf-enabled/apache2_mailhog.conf"
+    depends_on:
+      - mailhog
+    environment:
+      MOODLE_DOCKER_DBTYPE: "pgsql"
+      MOODLE_DOCKER_DBHOST: "10.0.1.3"
+      MOODLE_DOCKER_DBNAME: "kahlo-cc"
+      MOODLE_DOCKER_DBUSER: "postgres"
+      MOODLE_DOCKER_DBPASS: "dev"
+      MOODLE_DOCKER_BROWSER: "firefox"
+      MOODLE_DOCKER_WEB_HOST: "edu.kahlo.cc"
+      MOODLE_DOCKER_WEB_PORT: "8080"
+    ports:
+      - "8080:80"
+  mailhog:
+    image: mailhog/mailhog
+
+  # certbot:
+  #   image: certbot/certbot
+  #   entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+  #   command: certonly -d *.kahlo.cc -m devbytom@gmail.com --debug-challenges --agree-tos --webroot -w /var/www/certbot -n
+  #   volumes:
+  #     - ./data/certbot/conf:/etc/letsencrypt
+  #     - ./data/certbot/www:/var/www/certbot/.well-known/acme-challenge
+  #     - ./data/logs:/var/log/letsencrypt
+
+  nginx:
+    image: devbytom/nginx_kahlo_cc:latest
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    restart: always
+    build:
+      context: ./nginx/
+    container_name: nginx
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/html/www/.well-known/acme-challenge
+    ports:
+      - "80:80"
+      - "443:443"
