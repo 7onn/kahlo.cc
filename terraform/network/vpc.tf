@@ -25,11 +25,10 @@ resource "google_compute_firewall" "server" {
     protocol = "tcp"
     ports    = ["443"]
   }
-
-  allow {
-    protocol = "tcp"
-    ports    = ["8080"]
-  }
+  // allow {
+  //   protocol = "tcp"
+  //   ports    = ["8080"]
+  // }
 
 }
 
