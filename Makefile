@@ -16,3 +16,8 @@ help:
 
 db-connect:
 	@psql "postgresql://postgres:dev@10.0.1.3:5432/kahlo-cc"
+
+deploy:
+	@git pull
+	@docker-compose build --no-cache 
+	@docker-compose up -d
