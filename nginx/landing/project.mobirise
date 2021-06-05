@@ -14,7 +14,7 @@
       ]
     },
     "versionFirst": "3.12.1",
-    "uniqCompNum": 92,
+    "uniqCompNum": 93,
     "versionPublish": "5.3.0",
     "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png",
@@ -2151,7 +2151,7 @@
             "fontName": {},
             "fontColor": "#ffffff"
           },
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link text-primary\" href=\"index.html#msg-box4-s\">sobre nós</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link text-primary\" href=\"index.html#msg-box3-n\" aria-expanded=\"false\">cursos</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link text-primary\" href=\"index.html#testimonials1-f\" aria-expanded=\"false\">depoimentos</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-default-outline btn-default\" href=\"https://mobirise.com/\">cadastre-se</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-info-outline btn-info\" href=\"http://edu.kahlo.cc\">login</a></li>",
+          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link text-primary\" href=\"index.html#msg-box4-s\">sobre nós</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link text-primary\" href=\"index.html#msg-box3-n\" aria-expanded=\"false\">cursos</a></li><li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link text-primary\" href=\"index.html#testimonials1-f\" aria-expanded=\"false\">depoimentos</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-default-outline btn-default\" href=\"https://mobirise.com/\">cadastre-se</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-default-outline btn-default\" href=\"http://edu.kahlo.cc\">login</a></li>",
           "logo": {
             "image": {
               "active": true,
@@ -2598,7 +2598,7 @@
             "overlayColor": "#222",
             "overlayOpacity": 0.5
           },
-          "header": "o que os nossos alunxs dizem",
+          "header": "o que os nossos alunes dizem",
           "items": [
             {
               "authorName": "paulo siqueira",
@@ -2607,8 +2607,8 @@
             },
             {
               "authorName": "alana rodrigues",
-              "authorBio": "ilustradora autônoma<br>aluna do curso <b>voa!</b>",
-              "text": "<p class=\"mbr-reviews__p\">“como ilustradora sempre senti uma grande necessidade de mostrar meu trabalho para o mundo, e como autônoma, uma grande dificuldade de saber como criar minha marca pessoal nesse ramo. o voa! veio com tudo pra mim. experiências dos professores, técnicas, e cases que me ajudaram a descobrir como potencializar a minha carreira como ilustradora.”</p>"
+              "authorBio": "ilustradora autônoma<br>aluna do curso <b>venda sua arte!</b>",
+              "text": "<p class=\"mbr-reviews__p\">“como ilustradora sempre senti uma grande necessidade de mostrar meu trabalho para o mundo, e como autônoma, uma grande dificuldade de saber como criar minha marca pessoal nesse ramo. o venda sua arte veio com tudo pra mim. experiências dos professores, técnicas, e cases que me ajudaram a descobrir como potencializar a minha carreira como ilustradora.”</p>"
             },
             {
               "authorName": "rodrigo vieira",
@@ -2666,7 +2666,7 @@
             "overlayOpacity": 0.5
           },
           "title": "assine nossa newsletter e <br>fique por dentro das novidades",
-          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"mbr-buttons__btn btn btn-lg btn-info\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\">assinar a newsletter</a>",
+          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"mbr-buttons__btn btn btn-lg btn-danger\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove,-mbrBtnRemove\">assinar a newsletter</a>",
           "form": {
             "action": "pamelahandrade@gmail.com",
             "alerts": {
@@ -2675,7 +2675,7 @@
             "fields": {
               "email": {
                 "title": "Email",
-                "customTitle": "Enter Your Email Address..."
+                "customTitle": "Coloque seu email aqui "
               }
             }
           },
