@@ -3,6 +3,8 @@ version: "2"
 services:
   webserver:
     image: "devbytom/moodle-php-apache:7.3"
+    build: 
+      context: ./src/
     restart: always
     volumes:
       - "./src:/var/www/html"
