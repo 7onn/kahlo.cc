@@ -8,6 +8,7 @@ services:
     restart: always
     volumes:
       - "./src:/var/www/html"
+      - "./data/certbot/www:/var/www/certbot"
       - "./assets/web/apache2_faildumps.conf:/etc/apache2/conf-enabled/apache2_faildumps.conf"
       - "./assets/web/apache2_mailhog.conf:/etc/apache2/conf-enabled/apache2_mailhog.conf"
     depends_on:
