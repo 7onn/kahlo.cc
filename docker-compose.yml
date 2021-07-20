@@ -7,10 +7,10 @@ services:
       context: ./src/
     restart: always
     volumes:
-      - "./src:/var/www/html"
-      - "./data/certbot/www:/var/www/certbot"
-      - "./assets/web/apache2_faildumps.conf:/etc/apache2/conf-enabled/apache2_faildumps.conf"
-      - "./assets/web/apache2_mailhog.conf:/etc/apache2/conf-enabled/apache2_mailhog.conf"
+      - ./src:/var/www/html
+      - ./data/certbot/www:/var/www/certbot
+      - ./assets/web/apache2_faildumps.conf:/etc/apache2/conf-enabled/apache2_faildumps.conf
+      - ./assets/web/apache2_mailhog.conf:/etc/apache2/conf-enabled/apache2_mailhog.conf
     depends_on:
       - mailhog
     environment:
@@ -33,6 +33,7 @@ services:
     container_name: nginx
     volumes:
       - /etc/letsencrypt:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
     ports:
       - "80:80"
       - "443:443"
