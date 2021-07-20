@@ -2,7 +2,7 @@
 online LMS focused on creative, artistic and cultural entrepreneurs
 
 ## Landing page
-- http://kahlo.cc/
+- https://kahlo.cc/
 
 ## LMS
-- http://edu.kahlo.cc/
+- https://edu.kahlo.cc/

@@ -17,7 +17,7 @@ $host = 'localhost';
 if (!empty(getenv('MOODLE_DOCKER_WEB_HOST'))) {
     $host = getenv('MOODLE_DOCKER_WEB_HOST');
 }
-$CFG->wwwroot   = "http://{$host}";
+$CFG->wwwroot   = "https://{$host}";
 $port = getenv('MOODLE_DOCKER_WEB_PORT');
 if (!empty($port)) {
     // Extract port in case the format is bind_ip:port.
@@ -31,7 +31,7 @@ $CFG->dataroot  = '/var/www/moodledata';
 $CFG->admin     = 'admin';
 $CFG->directorypermissions = 0777;
 $CFG->smtphosts = 'mailhog:1025';
-$CFG->noreplyaddress = 'noreply@example.com';
+$CFG->noreplyaddress = 'noreply@kahlo.cc';
 
 // Debug options - possible to be controlled by flag in future..
 $CFG->debug = (E_ALL | E_STRICT); // DEBUG_DEVELOPER
