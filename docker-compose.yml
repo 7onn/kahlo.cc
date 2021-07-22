@@ -21,7 +21,7 @@ services:
       MOODLE_DOCKER_DBPASS: "dev"
       MOODLE_DOCKER_BROWSER: "firefox"
       MOODLE_DOCKER_WEB_HOST: "edu.kahlo.cc"
-      MOODLE_DOCKER_WEB_PORT: "443"
+      # MOODLE_DOCKER_WEB_PORT: "443"
   mailhog:
     image: mailhog/mailhog
   nginx:
