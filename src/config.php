@@ -17,7 +17,7 @@ $host = 'localhost';
 if (!empty(getenv('MOODLE_DOCKER_WEB_HOST'))) {
     $host = getenv('MOODLE_DOCKER_WEB_HOST');
 }
-$CFG->wwwroot   = "http://{$host}";
+$CFG->wwwroot   = "//{$host}";
 $port = getenv('MOODLE_DOCKER_WEB_PORT');
 if (!empty($port)) {
     // Extract port in case the format is bind_ip:port.
