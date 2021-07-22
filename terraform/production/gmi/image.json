@@ -6,7 +6,7 @@
     "region": "us-central1",
     "zone": "us-central1-c",
     "project_id": "kahlo-310600",
-    "service_account_json": "/home/tom/Downloads/kahlo-310600-4dea5864f38e.json"
+    "service_account_json": "/home/tom/kahlo-310600-a230c84b2128.json"
   },
   "builders": [
     {
